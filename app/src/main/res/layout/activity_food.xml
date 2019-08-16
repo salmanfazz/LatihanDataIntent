@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/menu_gofood" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Order Food"
+        android:textColor="#4CAF50"
+        android:textSize="20pt"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25px"
+                android:text="Nama"
+                android:textSize="10pt" />
+
+            <EditText
+                android:id="@+id/txt_nama"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Nama" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25px"
+                android:text="Alamat"
+                android:textSize="10pt" />
+
+            <EditText
+                android:id="@+id/txt_alamat"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Alamat" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25px"
+                android:text="Pesanan"
+                android:textSize="10pt" />
+
+            <EditText
+                android:id="@+id/txt_pesan"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Pesanan" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+</LinearLayout>
